@@ -15,7 +15,25 @@ class Revista extends Documento{
     //put your code here
      private $volumen;
      private $fechaEdicion;
-     function getVolumen() {
+     private $temas;
+     private $secciones;
+     function getTemas() {
+         return $this->temas;
+     }
+
+     function getSecciones() {
+         return $this->secciones;
+     }
+
+     function setTemas($temas) {
+         $this->temas = $temas;
+     }
+
+     function setSecciones($secciones) {
+         $this->secciones = $secciones;
+     }
+
+          function getVolumen() {
          return $this->volumen;
      }
 

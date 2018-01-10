@@ -11,43 +11,44 @@
  *
  * @author casa
  */
-class Revista extends Documento{
+class Revista extends Documento {
+
     //put your code here
-     private $volumen;
-     private $fechaEdicion;
-     private $temas;
-     private $secciones;
-     function getTemas() {
-         return $this->temas;
-     }
+    private $volumen;
+    private $fechaEdicion;
+    private $temas;
+    private $secciones;
 
-     function getSecciones() {
-         return $this->secciones;
-     }
+    function getTemas() {
+        return $this->temas;
+    }
 
-     function setTemas($temas) {
-         $this->temas = $temas;
-     }
+    function getSecciones() {
+        return $this->secciones;
+    }
 
-     function setSecciones($secciones) {
-         $this->secciones = $secciones;
-     }
+    function setTemas($temas) {
+        $this->temas = $temas;
+    }
 
-          function getVolumen() {
-         return $this->volumen;
-     }
+    function setSecciones($secciones) {
+        $this->secciones = $secciones;
+    }
 
-     function getFechaEdicion() {
-         return $this->fechaEdicion;
-     }
+    function getVolumen() {
+        return $this->volumen;
+    }
 
-     function setVolumen($volumen) {
-         $this->volumen = $volumen;
-     }
+    function getFechaEdicion() {
+        return $this->fechaEdicion;
+    }
 
-     function setFechaEdicion($fechaEdicion) {
-         $this->fechaEdicion = $fechaEdicion;
-     }
+    function setVolumen($volumen) {
+        $this->volumen = $volumen;
+    }
 
+    function setFechaEdicion($fechaEdicion) {
+        $this->fechaEdicion = $fechaEdicion;
+    }
 
 }

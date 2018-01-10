@@ -11,7 +11,7 @@
  *
  * @author casa
  */
-class Libro {
+class Libro extends Documento {
     //put your code here
      private $edicion;
      private $editorial;

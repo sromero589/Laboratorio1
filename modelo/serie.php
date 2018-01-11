@@ -73,7 +73,8 @@ class Serie {
 
             $stmt = $this->mysqli->prepare($sql);
             $stmt->bind_param(
-                    'sssssi', $data->Nombre, $data->ActorPrincipal, $data->Director, $data->Temporadas, $data->FechaEstreno, $data->id
+                    'sssssi', $data->Nombre, $data->ActorPrincipal, $data->Director, 
+                    $data->Temporadas, $data->FechaEstreno, $data->id
             );
             $stmt->execute();
         } catch (Exception $e) {
